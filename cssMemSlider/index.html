@@ -1,37 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>cssMemSlider</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <header class="header">
-        <h1 class="header__title">cssMemSlider</h1>
+      <h1 class="header__title">cssMemSlider</h1>
     </header>
-    <main class="main"> text
-        <div class="wrapper">
-            <div class="main__slider slider">
-                <div class="wrapper">
-                <div class="slider__card card">
-                        <div class="card__picture"></div>
-                        <div class="card__text"></div>
-                    </div>
-                </div>
-                <div class="slider__radio"></div>
+    <main class="main">
+      <div class="wrapper">
+        <div class="main__slider slider">
+          <div class="slider__picture">
+            <div class="wrapper">
+              <img
+                src="./assets/images/image1.webp"
+                alt="image1"
+                class="slider__img"
+              />
             </div>
+          </div>
+          <div class="slider__text">How do you think? It's funny?</div>
+
+
+          <div class="slider__buttons">
+            <div class="slider__button">
+              <input checked type="radio" name="buttons" id="switch1" />
+            </div>
+            <div class="slider__button">
+              <input type="radio" name="buttons" id="switch2" />
+            </div>
+            <div class="slider__button">
+              <input type="radio" name="buttons" id="switch3" />
+            </div>
+            <div class="slider__button">
+              <input type="radio" name="buttons" id="switch4" />
+            </div>
+            <div class="slider__button">
+              <input type="radio" name="buttons" id="switch5" />
+            </div>
+            <div class="slider__button">
+              <input type="radio" name="buttons" id="switch6" />
+            </div>
+
+        <div class="slider__controls">
+                <label for="switch1" class="slider__item"><div class="slider__round"></div></label>
+                <label for="switch2" class="slider__item"><div class="slider__round"></div></label>
+                <label for="switch3" class="slider__item"><div class="slider__round"></div></label>
+                <label for="switch4" class="slider__item"><div class="slider__round"></div></label>
+                <label for="switch5" class="slider__item"><div class="slider__round"></div></label>
+                <label for="switch6" class="slider__item"><div class="slider__round"></div></label>
         </div>
+
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="footer">
-        <div class="footer__git">
-            <a href="https://github.com/jocker-py" class="footer__link"></a>
-        </div>
-        <h2 class="footer__year">2022</h2>
-        <div class="footer__school">
-            <a href="https://rs.school/js/" class="footer__link"></a>
-        </div>
+      <div class="footer__git">
+        <a href="https://github.com/jocker-py" class="footer__link">
+          <img
+            src="./assets/icons/github.png"
+            alt="github"
+            class="footer__img"
+            width="100px"
+            height="41px"
+          />
+        </a>
+      </div>
+      <h2 class="footer__year">2022</h2>
+      <div class="footer__school">
+        <a href="https://rs.school/js/" class="footer__link">
+          <img
+            src="./assets/icons/rsschool.svg"
+            alt="rsschool"
+            class="footer__img"
+            width="110px"
+            height="41px"
+          />
+        </a>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
