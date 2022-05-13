@@ -7,6 +7,7 @@
     <title>cssMemSlider</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
+
   <body>
     <header class="header">
       <h1 class="header__title">cssMemSlider</h1>
@@ -14,47 +15,57 @@
     <main class="main">
       <div class="wrapper">
         <div class="main__slider slider">
-          <div class="slider__picture">
-            <div class="wrapper">
-              <img
-                src="./assets/images/image1.webp"
-                alt="image1"
-                class="slider__img"
-              />
+          <input
+            checked
+            type="radio"
+            name="radio"
+            class="slider__radio"
+            id="switch1"
+          />
+          <input type="radio" name="radio" class="slider__radio" id="switch2" />
+          <input type="radio" name="radio" class="slider__radio" id="switch3" />
+          <input type="radio" name="radio" class="slider__radio" id="switch4" />
+          <input type="radio" name="radio" class="slider__radio" id="switch5" />
+
+          <div class="slider__pictures">
+            <div class="slider__picture">
+              <img src="./assets/images/image1.webp" alt="image1" class="slider__picture--1">
+            </div>
+            <div class="slider__picture">
+              <img src="./assets/images/image2.jpeg" alt="image2" class="slider__picture--2">
+            </div>
+            <div class="slider__picture slider__picture--3">
+              
+            </div>
+            <div class="slider__picture slider__picture--4">
+              
+            </div>
+            <div class="slider__picture slider__picture--5">
+              
             </div>
           </div>
+
           <div class="slider__text">How do you think? It's funny?</div>
 
-
-          <div class="slider__buttons">
-            <div class="slider__button">
-              <input checked type="radio" name="buttons" id="switch1" />
-            </div>
-            <div class="slider__button">
-              <input type="radio" name="buttons" id="switch2" />
-            </div>
-            <div class="slider__button">
-              <input type="radio" name="buttons" id="switch3" />
-            </div>
-            <div class="slider__button">
-              <input type="radio" name="buttons" id="switch4" />
-            </div>
-            <div class="slider__button">
-              <input type="radio" name="buttons" id="switch5" />
-            </div>
-            <div class="slider__button">
-              <input type="radio" name="buttons" id="switch6" />
-            </div>
-
-        <div class="slider__controls">
-                <label for="switch1" class="slider__item"><div class="slider__round"></div></label>
-                <label for="switch2" class="slider__item"><div class="slider__round"></div></label>
-                <label for="switch3" class="slider__item"><div class="slider__round"></div></label>
-                <label for="switch4" class="slider__item"><div class="slider__round"></div></label>
-                <label for="switch5" class="slider__item"><div class="slider__round"></div></label>
-                <label for="switch6" class="slider__item"><div class="slider__round"></div></label>
-        </div>
-
+          <div class="slider__controls">
+            <label for="switch1" class="slider__item" id="item1">
+              <div class="slider__round"></div>
+            </label>
+            <label for="switch2" class="slider__item" id="item2">
+              <div class="slider__round"></div>
+            </label>
+            <label for="switch3" class="slider__item" id="item3">
+              <div class="slider__round"></div>
+            </label>
+            <label for="switch4" class="slider__item" id="item4">
+              <div class="slider__round"></div>
+            </label>
+            <label for="switch5" class="slider__item" id="item5">
+              <div class="slider__round"></div>
+            </label>
+            <label for="switch6" class="slider__item" id="item6">
+              <div class="slider__round"></div>
+            </label>
           </div>
         </div>
       </div>
