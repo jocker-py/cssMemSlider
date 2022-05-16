@@ -275,6 +275,11 @@ h1 {
     order: 3;
     width: 100%;
   }
+
+  .slider__content {
+    height: 3vmax;
+    align-items: baseline;
+  }
 }
 
 @media(max-width: 400px){
