@@ -62,7 +62,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  row-gap: 2vw;
+  row-gap: 1vw;
   overflow: hidden;
 }
 
@@ -241,9 +241,6 @@ h1 {
 /*Footer End*/
 
 @media (max-width: 1200px) {
-  h1 {
-    margin: 1vw 0;
-  }
 
   .wrapper {
     width: 65%;
