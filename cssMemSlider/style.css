@@ -21,16 +21,17 @@ body {
   background-color: #22223b;
   width: 100%;
   height: 12vh;
-  text-align: center;
   background-image: url("./assets/icons/noise.png");
   background-repeat: repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
   font-size: 6.4em;
-  margin: 15px 0;
   color: #f2e9e4;
-  filter: drop-shadow(0px 0px 15px black);
+  filter: drop-shadow(0 0 1.5rem black);
 }
 /*Header End*/
 
@@ -48,7 +49,7 @@ h1 {
 }
 
 .wrapper {
-  padding: 30px 0;
+  padding: 3rem 0;
   margin: 0 auto;
   width: 60%;
 }
@@ -83,25 +84,25 @@ h1 {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  border-radius: 50px;
-  border: 30px solid black;
+  border-radius: 5rem;
+  border: 3rem solid black;
 }
 
 .wrapper__content {
   order: 1;
   width: 55%;
-  padding: 0 10px;
-  margin: 10px;
+  padding: 0 1rem;
+  margin: 1rem;
   overflow: hidden;
-  border-radius: 0 30px 0 30px;
-  box-shadow: 0px 0px 5px 5px black;
+  border-radius: 0 3rem 0 3rem;
+  box-shadow: 0 0 0.5rem 0.5rem black;
   background-color: #f2e9e4;
 }
 
 .slider__content {
-  font-size: 2.4em;
-  height: 1px;
-  min-height: 70px;
+  font-size: 2.4rem;
+  height: 0.1rem;
+  min-height: 7rem;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -112,25 +113,26 @@ h1 {
 
 .slider__text {
   flex-shrink: 0;
-  padding: 20px 30px;
+  padding: 2rem 1rem 2rem 1rem;
   margin: 0;
   width: 100%;
+  text-align: center;
 }
 
 .slider__controls {
   order: 2;
-  margin: 0 10px;
+  margin: 0 1rem;
 }
 .slider__item {
   display: inline-block;
-  padding: 15px;
+  padding: 1.5rem;
   cursor: pointer;
   border-radius: 50%;
 }
 
 .slider__item:hover {
   background-color: #22223b;
-  box-shadow: 0px 0px 2px 2px black;
+  box-shadow: 0 0 0.2rem 0.2rem black;
   transition: all 0.3s ease-in-out;
   transform: scale(1.3);
 }
@@ -138,27 +140,27 @@ h1 {
 .slider__round {
   cursor: pointer;
   content: "";
-  width: 10px;
-  height: 10px;
-  box-shadow: 0px 0px 2px 2px #f2e9e4;
+  width: 1rem;
+  height: 1rem;
+  box-shadow: 0 0 0.2rem 0.2rem #f2e9e4;
   background-color: #f2e9e4;
-  border-radius: 5px;
+  border-radius: 0.5rem;
 }
 
 .slider__item:hover .slider__round {
   background-color: #9a8c98;
-  box-shadow: 0px 0px 2px 2px #9a8c98;
+  box-shadow: 0 0 0.2rem 0.2rem #9a8c98;
 }
 
-#switch1:checked ~ .slider__controls #item1 .slider__round,
-#switch2:checked ~ .slider__controls #item2 .slider__round,
-#switch3:checked ~ .slider__controls #item3 .slider__round,
-#switch4:checked ~ .slider__controls #item4 .slider__round,
-#switch5:checked ~ .slider__controls #item5 .slider__round,
-#switch6:checked ~ .slider__controls #item6 .slider__round {
+#switch1:checked ~ .slider__controls #itrem1 .slider__round,
+#switch2:checked ~ .slider__controls #itrem2 .slider__round,
+#switch3:checked ~ .slider__controls #itrem3 .slider__round,
+#switch4:checked ~ .slider__controls #itrem4 .slider__round,
+#switch5:checked ~ .slider__controls #itrem5 .slider__round,
+#switch6:checked ~ .slider__controls #itrem6 .slider__round {
   transform: scale(1.3);
   background-color: #9a8c98;
-  box-shadow: 0px 0px 2px 2px #9a8c98;
+  box-shadow: 0 0 0.2rem 0.2rem #9a8c98;
 }
 
 #switch1:checked ~ .wrapper__pictures .slider__pictures {
@@ -207,7 +209,7 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  padding: 3rem;
   background-color: #22223b;
   width: 100%;
   height: 12vh;
@@ -216,18 +218,18 @@ h1 {
 }
 
 .footer__year {
-  font-size: 2.4em;
+  font-size: 2.4rem;
   color: #f2e9e4;
-  filter: drop-shadow(0px 0px 5px black);
+  filter: drop-shadow(0 0 0.5rem black);
 }
 
 .footer__git,
 .footer__school {
   background-color: #9a8c98;
-  border-radius: 20px;
-  padding: 10px;
+  border-radius: 2rem;
+  padding: 1rem;
   transition: 0.3s ease-in-out;
-  box-shadow: 0px 0px 1px 1px #9a8c98;
+  box-shadow: 0 0 0.1rem 0.1rem #9a8c98;
 }
 
 .footer__git:hover,
@@ -239,11 +241,8 @@ h1 {
 /*Footer End*/
 
 @media (max-width: 1200px) {
-
-  
   h1 {
     margin: 1vw 0;
-    
   }
 
   .wrapper {
@@ -254,13 +253,12 @@ h1 {
     border: 2vw solid black;
   }
 
-  .slider__text {
+  /* .slider__text {
     padding: 1vmax 2vmax;
-  }
+  } */
 }
 
 @media (max-width: 860px) {
-
   html {
     font-size: 8px;
   }
@@ -289,9 +287,6 @@ h1 {
 }
 
 @media (max-width: 400px) {
-  html {
-    font-size: 8px;
-  }
   .wrapper {
     width: 100%;
   }
